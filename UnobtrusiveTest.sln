@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnobtrusiveTest", "UnobtrusiveTest\UnobtrusiveTest.csproj", "{6C233175-3797-4E19-AE34-8AAA26B87970}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C233175-3797-4E19-AE34-8AAA26B87970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C233175-3797-4E19-AE34-8AAA26B87970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C233175-3797-4E19-AE34-8AAA26B87970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C233175-3797-4E19-AE34-8AAA26B87970}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F08B0A4D-C7E8-4639-BF98-4A28639D583F}
+	EndGlobalSection
+EndGlobal
