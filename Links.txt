@@ -1,0 +1,15 @@
+
+URL
+https://www.learnrazorpages.com/razor-pages/ajax/unobtrusive-ajax
+https://www.mikesdotnetting.com/article/326/using-unobtrusive-ajax-in-razor-pages
+
+
+
+
+
+
+-- To Add 
+	1.  Add nuget in PM:  	Install-Package Microsoft.jQuery.Unobtrusive.Ajax -Version 3.2.6
+	2.  Run npm command in PM:  npm i jquery-ajax-unobtrusive
+		a.  go into solution folder, node folder, copy ajax folder to wwwroot of project
+		b.  copy links to _layout.cshtml file in shared folder

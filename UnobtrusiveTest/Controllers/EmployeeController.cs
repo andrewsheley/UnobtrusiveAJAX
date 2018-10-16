@@ -26,6 +26,11 @@ namespace UnobtrusiveTest.Controllers
             //db.BookMasters.Add(one);
             //db.SaveChanges();
 
+            if (!ModelState.IsValid)
+            {
+                //return PartialView("Index");
+                return PartialView("Index", employee);
+            }
 
 
             return PartialView("_PartialAddress");
