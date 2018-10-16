@@ -9,7 +9,7 @@
     <h2>Name Info</h2>
 
 
-    <form asp-action="_PartialName" asp-controller="Employee" method="POST" data-ajax="true" data-ajax-update="#RegSuccessDivOne" data-ajax-mode="replace" >
+    <form asp-action="_PartialName" asp-controller="Employee" method="POST" data-ajax="true" data-ajax-update="#RegSuccessDivOne" data-ajax-mode="replace">
 
 
         @Html.LabelFor(e => e.FirstName)<br />
@@ -21,6 +21,13 @@
         @Html.ValidationMessageFor(e => e.LastName)
         <br />
         <button type="submit">Address Info NEXT</button>
+
+        @*<button type="submit" name="prev">Start PREV</button>
+        |
+        <button type="submit" name="next">Address Info NEXT</button>*@
+
+
+
     </form>
 
 

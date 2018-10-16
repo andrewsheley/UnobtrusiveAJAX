@@ -8,6 +8,35 @@
 
     <form asp-action="_PartialAddress" asp-controller="Employee" method="POST" data-ajax="true" data-ajax-update="#RegSuccessDivTwo" data-ajax-mode="replace">
 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    @Html.DisplayNameFor(e => e.FirstName)
+                </div>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.FirstName)
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    @Html.DisplayNameFor(model => model.LastName)
+                </div>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.LastName)
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
 
         @Html.LabelFor(e => e.Address1)<br />
         @Html.TextBoxFor(e => e.Address1)
@@ -30,8 +59,14 @@
         @Html.TextBoxFor(e => e.Zip)
         @Html.ValidationMessageFor(e => e.Zip)
         <br />
-        
-        <button type="submit">Additional Info NEXT</button>
+
+
+
+
+
+        <input type="submit" name="button" value="Start PREV" />
+        |
+        <input type="submit" name="button" value="Additional Info NEXT" />
     </form>
 
 
