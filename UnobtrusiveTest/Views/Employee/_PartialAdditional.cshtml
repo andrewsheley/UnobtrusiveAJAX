@@ -1,0 +1,25 @@
+﻿
+@model UnobtrusiveTest.Models.Employee.Employee
+
+
+<div id="RegSuccessDivThree">
+    <h2>Additional Info</h2>
+
+
+    <form asp-action="_PartialAdditional" asp-controller="Employee" method="POST" data-ajax="true" data-ajax-update="#RegSuccessDivThree" data-ajax-mode="replace">
+
+
+        @Html.LabelFor(e => e.PhoneNumber)<br />
+        @Html.TextBoxFor(e => e.PhoneNumber)
+        @Html.ValidationMessageFor(e => e.PhoneNumber)
+        <br />
+        @Html.LabelFor(e => e.Department)<br />
+        @Html.TextBoxFor(e => e.Department)
+        @Html.ValidationMessageFor(e => e.Department)
+        <br />
+        <button type="submit">Finish GO HOME</button>
+    </form>
+
+
+
+</div>

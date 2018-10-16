@@ -1,0 +1,39 @@
+﻿
+@model UnobtrusiveTest.Models.Employee.Employee
+
+
+<div id="RegSuccessDivTwo">
+    <h2>Address Info</h2>
+
+
+    <form asp-action="_PartialAddress" asp-controller="Employee" method="POST" data-ajax="true" data-ajax-update="#RegSuccessDivTwo" data-ajax-mode="replace">
+
+
+        @Html.LabelFor(e => e.Address1)<br />
+        @Html.TextBoxFor(e => e.Address1)
+        @Html.ValidationMessageFor(e => e.Address1)
+        <br />
+        @Html.LabelFor(e => e.Address2)<br />
+        @Html.TextBoxFor(e => e.Address2)
+        @Html.ValidationMessageFor(e => e.Address2)
+        <br />
+
+        @Html.LabelFor(e => e.City)<br />
+        @Html.TextBoxFor(e => e.City)
+        @Html.ValidationMessageFor(e => e.City)
+        <br />
+        @Html.LabelFor(e => e.State)<br />
+        @Html.TextBoxFor(e => e.State)
+        @Html.ValidationMessageFor(e => e.State)
+        <br />
+        @Html.LabelFor(e => e.Zip)<br />
+        @Html.TextBoxFor(e => e.Zip)
+        @Html.ValidationMessageFor(e => e.Zip)
+        <br />
+        
+        <button type="submit">Additional Info NEXT</button>
+    </form>
+
+
+
+</div>
