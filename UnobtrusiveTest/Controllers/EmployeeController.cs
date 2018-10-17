@@ -44,6 +44,14 @@ namespace UnobtrusiveTest.Controllers
 
             var nextRow = current.Next;
 
+            // See if at last of linked list
+            if (nextRow != null)
+            {
+                var priorRow = initialForms.Find(nextRow.Value);
+                var peekRow = priorRow.Next;
+                nextRow.Value.Last = peekRow == null ? true : false;
+            }
+
             return nextRow != null ? nextRow.Value : current.Value;
 
             //return current.Value;
@@ -63,20 +71,10 @@ namespace UnobtrusiveTest.Controllers
             {
                 var priorRow = initialForms.Find(prevRow.Value);
                 var peekRow = priorRow.Previous;
-                if (peekRow == null)
-                {
-                    prevRow.Value.First = true;
-                }
-                else
-                {
-                    prevRow.Value.First = false;
-                }
-
+                prevRow.Value.First = peekRow == null ? true : false;
             }
 
             return prevRow != null ? prevRow.Value : current.Value;
-
-            //return current.Value;
         }
 
 
