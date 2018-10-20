@@ -1,6 +1,13 @@
-﻿
+﻿@using UnobtrusiveTest.Controllers
 @model UnobtrusiveTest.Models.Employee.Employee
 
+@{
+    FormViewData formViewData = null;
+    if (ViewData["FormViewData"] is FormViewData)
+    {
+        formViewData = ViewData["FormViewData"] as FormViewData;
+    }
+}
 
 <div id="RegSuccessDivTwo">
     <h2>Address Info</h2>
@@ -67,6 +74,14 @@
         <input type="submit" name="button" value="Start PREV" />
         |
         <input type="submit" name="button" value="Additional Info NEXT" />
+
+       
+
+        @if (formViewData.Last)
+        {
+
+           <span>&nbsp; | &nbsp;</span> <input type="submit" name="button" value="FINISH" />
+        }
     </form>
 
 

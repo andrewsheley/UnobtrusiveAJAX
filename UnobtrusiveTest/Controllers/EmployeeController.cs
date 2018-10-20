@@ -127,6 +127,7 @@ namespace UnobtrusiveTest.Controllers
             //    return PartialView("Index", employee);
             //}
 
+            ViewData["FormViewData"] = new FormViewData() { Last = true };
 
             return PartialView("_PartialAddress", employee);
         }
