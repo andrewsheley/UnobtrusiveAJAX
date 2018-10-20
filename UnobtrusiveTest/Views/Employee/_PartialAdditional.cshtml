@@ -17,6 +17,9 @@
         @Html.TextBoxFor(e => e.Department)
         @Html.ValidationMessageFor(e => e.Department)
         <br />
+        @*@Html.LabelFor(e => e.IsEmployed)<br />
+        @Html.CheckBoxFor(e => e.IsEmployed) True &nbsp; @Html.CheckBoxFor(e => !e.IsEmployed) False<br />
+        <br />*@
         <button type="submit">Finish GO HOME</button>
     </form>
 

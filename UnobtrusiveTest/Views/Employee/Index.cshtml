@@ -20,6 +20,10 @@
         @Html.TextBoxFor(e => e.LastName)
         @Html.ValidationMessageFor(e => e.LastName)
         <br />
+        @*@Html.LabelFor(e => e.IsEmployed)<br />
+        @Html.CheckBoxFor(e => e.IsEmployed) True &nbsp; @Html.CheckBoxFor(e => !e.IsEmployed) False<br />
+        <br />*@
+
         <button type="submit">Address Info NEXT</button>
 
         @*<button type="submit" name="prev">Start PREV</button>

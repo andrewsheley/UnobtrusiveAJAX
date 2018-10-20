@@ -27,6 +27,10 @@ namespace UnobtrusiveTest.Models.Employee
         public string Zip { get; set; }
 
         [Required]
+        //[Range(typeof(bool), "true", "true", ErrorMessage = "The field Is Active must be checked.")]
+        public bool? IsEmployed { get; set; }
+
+        [Required]
         public string PhoneNumber { get; set; }
         [Required]
         public string Department { get; set; }
